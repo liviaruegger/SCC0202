@@ -4,4 +4,4 @@ These are my assignments for the Algorithms and Data Structures I course ([SCC02
 
 ### Includes
 - Exercises using various data structures and abstract data types, including lists (linked and sequential), stack, queue and binary trees;
-- Implementations of a [skiplist](/proj1/) (for a dictionary ADT), a [treap](/proj2/) and a [left-leaning red–black](/proj3/) (LLRB).
+- Implementations of a [skiplist](/proj1/) (for a dictionary ADT), a [treap](/proj2/) and a [left-leaning red–black tree](/proj3/) (LLRB).
