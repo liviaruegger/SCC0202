@@ -30,16 +30,11 @@ static void retirar_multiplos(lista_t *lista)
     int indice = 1; // Começa no número 2.
 
     // Substitui todos os números que não são primos por -1.
-    while (indice < (lista->tamanho - 1))
+    while (indice < lista->tamanho / 2) // O mais eficiente seria usar a raiz quadrada.
     {
-        if (lista->lista[indice] != -1)
-        {
-            for (int i = indice + 1; i < lista->tamanho; i++)
-            {
-                if (lista->lista[i] % lista->lista[indice] == 0)
-                    lista->lista[i] = -1;
-            }
-        }
+        int n = indice + 1;
+        for (int i = (2 * n) - 1; i < lista->tamanho; i += n)
+            lista->lista[i] = -1;
         
         indice++;
     }
